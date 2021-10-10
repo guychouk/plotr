@@ -6,7 +6,7 @@
   "scripts": {
     "start": "http-server public",
     "dev": "nodemon -w public --exec npm start",
-    "prettify": "prettier --write --ignore-unknown 'public/*.js'"
+    "prettify": "prettier --write --ignore-unknown 'public'"
   },
   "keywords": [
     "apache",

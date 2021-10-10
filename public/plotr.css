@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Noto+Sans+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro&family=Noto+Sans+Mono&display=swap");
 
 :root {
   --grid-rows: 10% 10% auto;
@@ -6,7 +6,7 @@
 }
 
 * {
-  font-family: 'Andada Pro', serif;
+  font-family: "Andada Pro", serif;
   box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ h1 {
 }
 
 code {
-  font-family: 'Noto Sans Mono', monospace;
+  font-family: "Noto Sans Mono", monospace;
   border-radius: 5px;
   padding: 0 5px;
   background-color: #0000008a;
