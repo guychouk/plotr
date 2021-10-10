@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Noto+Sans+Mono&display=swap');
+
+:root {
+  --grid-rows: 10% 10% auto;
+  --grid-columns: auto;
+}
+
+* {
+  font-family: 'Andada Pro', serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-row-gap: 2%;
+  padding: 0% 5% 5% 5%;
+  background-color: #d0ced7;
+  grid-template-columns: var(--grid-columns);
+  grid-template-rows: var(--grid-rows);
+}
+
+h1 {
+  font-size: 2em;
+  grid-column-start: span 4;
+  text-align: center;
+}
+
+code {
+  font-family: 'Noto Sans Mono', monospace;
+  border-radius: 5px;
+  padding: 0 5px;
+  background-color: #0000008a;
+  color: white;
+}
+
+#intro {
+  grid-column-start: span 4;
+}
+
+#button-group {
+  display: flex;
+  height: 50px;
+  gap: 25%;
+  grid-column-start: span 4;
+}
+#button-group button {
+  width: 50%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+#button-group #clear-all:hover {
+  width: 50%;
+  background-color: #ecc;
+  border: 1px solid #ecc;
+}
+#button-group #save-as-png:hover {
+  width: 50%;
+  background-color: #acc;
+  border: 1px solid #acc;
+}
+
+#file-input:hover {
+  background-color: #a8e3ff;
+  border: 1px solid #a8e3ff;
+}
+#file-input {
+  grid-column-start: span 4;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+#chart-container canvas {
+  border-radius: 5px;
+}
+#chart-container {
+  position: relative;
+  height: 80vh;
+  width: 100%;
+  grid-column-start: span 4;
+}

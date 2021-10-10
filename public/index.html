@@ -3,10 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <title>Plotr</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+  <link rel="stylesheet" href="/plotr.css">
+  <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js"></script>
+  <script src="https://unpkg.com/chart.js@3.5.1/dist/chart.min.js"></script>
 </head>
 <body>
-  <script type="text/javascript" src="index.js"></script>
+  <h1>📈 Plotr</h1>
+  <div id="intro">
+    <p>
+    Plots GnuPlot TSV files on graph - useful for quickly generating
+    a chart for Apache Benchmark tests when exported using:
+    <code>ab -g results.tsv</code>
+    </p>
+  </div>
+  <div id="file-input">Click or Drag .tsv files</div>
+  <div id="button-group">
+    <button type="button" id="clear-all">Clear all</button>
+    <button type="button" id="save-as-png">Save as PNG</button>
+  </div>
+  <div id="chart-container">
+    <canvas id="plot"></canvas>
+  </div>
+  <script type="text/javascript" src="/plotr.js"></script>
 </body>
 </html>
