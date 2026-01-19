@@ -4,7 +4,7 @@ Plots Apache Benchmark output files on a graph.
 
 ![Plotr](docs/plotr.gif)
 
-This is the source code for [this website](https://plotr.pages.dev/).
+This is the source code for [this website](https://plotr.guycho.uk/).
 
 To generate Apache Benchmark results file in [gnuplot](http://gnuplot.sourceforge.net/) format, add the `-g` flag to the `ab` command:
 
