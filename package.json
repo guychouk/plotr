@@ -4,8 +4,8 @@
   "description": "Plots ab benchmark results using exports from ab -g",
   "main": "index.js",
   "scripts": {
-    "start": "http-server public",
-    "dev": "nodemon -w public --exec npm start",
+    "dev": "live-server public --port=8080 --open=index.html --watch=public --ignore=.git",
+    "start": "npm run dev",
     "prettify": "prettier --write --ignore-unknown 'public'"
   },
   "keywords": [
@@ -17,8 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "13.0.2",
-    "nodemon": "2.0.13",
+    "live-server": "^1.2.2",
     "prettier": "2.4.1"
   }
 }
