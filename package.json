@@ -4,9 +4,8 @@
   "description": "Plots ab benchmark results using exports from ab -g",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server public --port=8080 --open=index.html --watch=public --ignore=.git",
-    "start": "npm run dev",
-    "prettify": "prettier --write --ignore-unknown 'public'"
+    "build": "mkdir -p public && cp -r src/. public/",
+    "dev": "npm run build && npx serve public"
   },
   "keywords": [
     "apache",
@@ -15,9 +14,5 @@
     "plot"
   ],
   "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "live-server": "^1.2.2",
-    "prettier": "2.4.1"
-  }
+  "license": "ISC"
 }
